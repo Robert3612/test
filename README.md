@@ -16,8 +16,8 @@ This project is licensed under the GPL-3.0-only license
 Start at your ILIAS root directory
 
 ```bash
-mkdir -p Customizing/global/plugins/Services/EventHandling/EventHook
-cd Customizing/global/plugins/Services/EventHandling/EventHook
+mkdir -p Customizing/global/plugins/Services/UIComponent/UserInterfaceHook
+cd Customizing/global/plugins/Services/UIComponent/UserInterfaceHook
 git clone https://github.com/studer-raimann/Test.git Test
 ```
 

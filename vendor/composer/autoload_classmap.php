@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'ilTestConfigGUI' => $baseDir . '/classes/class.ilTestConfigGUI.php',
     'ilTestPlugin' => $baseDir . '/classes/class.ilTestPlugin.php',
+    'ilTestUIHookGUI' => $baseDir . '/classes/class.ilTestUIHookGUI.php',
     'srag\\ActiveRecordConfig\\Test\\Config\\AbstractFactory' => $vendorDir . '/srag/activerecordconfig/src/Config/AbstractFactory.php',
     'srag\\ActiveRecordConfig\\Test\\Config\\AbstractRepository' => $vendorDir . '/srag/activerecordconfig/src/Config/AbstractRepository.php',
     'srag\\ActiveRecordConfig\\Test\\Config\\Config' => $vendorDir . '/srag/activerecordconfig/src/Config/Config.php',
@@ -77,6 +78,7 @@ return array(
     'srag\\DIC\\Test\\Version\\PluginVersionParameter' => $vendorDir . '/srag/dic/src/Version/PluginVersionParameter.php',
     'srag\\DIC\\Test\\Version\\Version' => $vendorDir . '/srag/dic/src/Version/Version.php',
     'srag\\DIC\\Test\\Version\\VersionInterface' => $vendorDir . '/srag/dic/src/Version/VersionInterface.php',
+    'srag\\DevTools\\Test\\DevToolsCtrl' => $vendorDir . '/srag/devtools/src/class.DevToolsCtrl.php',
     'srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger' => $vendorDir . '/srag/librariesnamespacechanger/src/LibrariesNamespaceChanger.php',
     'srag\\LibraryLanguageInstaller\\Test\\LibraryLanguageInstaller' => $vendorDir . '/srag/librarylanguageinstaller/src/LibraryLanguageInstaller.php',
     'srag\\Plugins\\Test\\Config\\ConfigCtrl' => $baseDir . '/src/Config/class.ConfigCtrl.php',

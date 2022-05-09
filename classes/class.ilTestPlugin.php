@@ -15,7 +15,7 @@ use srag\RemovePluginDataConfirm\Test\PluginUninstallTrait;
  *
  * @author studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-class ilTestPlugin extends ilEventHookPlugin
+class ilTestPlugin extends ilUserInterfaceHookPlugin
 {
 
     use PluginUninstallTrait;
@@ -73,20 +73,13 @@ class ilTestPlugin extends ilEventHookPlugin
     /**
      * @inheritDoc
      */
-    public function handleEvent(/*string*/ $a_component, /*string*/ $a_event, /*array*/ $a_parameter) : void
-    {
-        // TODO: Implement handleEvent
-    }
-
-
-    /**
-     * @inheritDoc
-     */
     public function updateLanguages(/*?array*/ $a_lang_keys = null) : void
     {
         parent::updateLanguages($a_lang_keys);
 
         $this->installRemovePluginDataConfirmLanguages();
+
+        DevToolsCtrl::installLanguages(self::plugin());
     }
 
 

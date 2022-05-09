@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit86b9d39ce5afc819e307531a744fd3f9
+class ComposerStaticInitca545865461537336218617d938ae0a7
 {
     public static $prefixLengthsPsr4 = array (
         's' => 
@@ -13,6 +13,7 @@ class ComposerStaticInit86b9d39ce5afc819e307531a744fd3f9
             'srag\\Plugins\\Test\\' => 18,
             'srag\\LibraryLanguageInstaller\\Test\\' => 35,
             'srag\\LibrariesNamespaceChanger\\' => 31,
+            'srag\\DevTools\\Test\\' => 19,
             'srag\\DIC\\Test\\' => 14,
             'srag\\CustomInputGUIs\\Test\\' => 26,
             'srag\\ActiveRecordConfig\\Test\\' => 29,
@@ -36,6 +37,10 @@ class ComposerStaticInit86b9d39ce5afc819e307531a744fd3f9
         array (
             0 => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src',
         ),
+        'srag\\DevTools\\Test\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/srag/devtools/src',
+        ),
         'srag\\DIC\\Test\\' => 
         array (
             0 => __DIR__ . '/..' . '/srag/dic/src',
@@ -53,6 +58,7 @@ class ComposerStaticInit86b9d39ce5afc819e307531a744fd3f9
     public static $classMap = array (
         'ilTestConfigGUI' => __DIR__ . '/../..' . '/classes/class.ilTestConfigGUI.php',
         'ilTestPlugin' => __DIR__ . '/../..' . '/classes/class.ilTestPlugin.php',
+        'ilTestUIHookGUI' => __DIR__ . '/../..' . '/classes/class.ilTestUIHookGUI.php',
         'srag\\ActiveRecordConfig\\Test\\Config\\AbstractFactory' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Config/AbstractFactory.php',
         'srag\\ActiveRecordConfig\\Test\\Config\\AbstractRepository' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Config/AbstractRepository.php',
         'srag\\ActiveRecordConfig\\Test\\Config\\Config' => __DIR__ . '/..' . '/srag/activerecordconfig/src/Config/Config.php',
@@ -122,6 +128,7 @@ class ComposerStaticInit86b9d39ce5afc819e307531a744fd3f9
         'srag\\DIC\\Test\\Version\\PluginVersionParameter' => __DIR__ . '/..' . '/srag/dic/src/Version/PluginVersionParameter.php',
         'srag\\DIC\\Test\\Version\\Version' => __DIR__ . '/..' . '/srag/dic/src/Version/Version.php',
         'srag\\DIC\\Test\\Version\\VersionInterface' => __DIR__ . '/..' . '/srag/dic/src/Version/VersionInterface.php',
+        'srag\\DevTools\\Test\\DevToolsCtrl' => __DIR__ . '/..' . '/srag/devtools/src/class.DevToolsCtrl.php',
         'srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/LibrariesNamespaceChanger.php',
         'srag\\LibraryLanguageInstaller\\Test\\LibraryLanguageInstaller' => __DIR__ . '/..' . '/srag/librarylanguageinstaller/src/LibraryLanguageInstaller.php',
         'srag\\Plugins\\Test\\Config\\ConfigCtrl' => __DIR__ . '/../..' . '/src/Config/class.ConfigCtrl.php',
@@ -139,9 +146,9 @@ class ComposerStaticInit86b9d39ce5afc819e307531a744fd3f9
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit86b9d39ce5afc819e307531a744fd3f9::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit86b9d39ce5afc819e307531a744fd3f9::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit86b9d39ce5afc819e307531a744fd3f9::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitca545865461537336218617d938ae0a7::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitca545865461537336218617d938ae0a7::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitca545865461537336218617d938ae0a7::$classMap;
 
         }, null, ClassLoader::class);
     }
